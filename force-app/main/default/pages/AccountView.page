@@ -1,3 +1,6 @@
+
+<!-- you could use either aura and LWC component in the same method-->
+
 <apex:page showHeader="false" standardStylesheets="false">
     <apex:includeLightning />
 
