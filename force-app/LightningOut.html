@@ -1,0 +1,26 @@
+
+<!-- If you want to use github for host your Lightning component -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+ <script src="https://(myDomain)/lightning/lightning.out.js"></script>
+ <div id="datatable"></div>
+    <script>
+        $Lightning.use("c:AccountInformationApp", function() {
+            $Lightning.createComponent(
+                "c:AccountInformation",
+                {},
+                "datatable",
+                function(cmp) {
+                    console.log("Lightning Component is Loaded...");
+                }
+            );
+            '-------------------' // Site endpoint
+        });
+    </script>
+  </body>
+</html>

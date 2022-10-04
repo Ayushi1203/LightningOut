@@ -1,0 +1,17 @@
+<apex:page showHeader="false" standardStylesheets="false">
+    <apex:includeLightning />
+
+    <div id="datatable"></div>
+    <script>
+        $Lightning.use("c:LightiningApp", function() {
+            $Lightning.createComponent(
+                "c:lWCLightningOut",
+                {},
+                "datatable",
+                function(cmp) {
+                    console.log("Lightning LWC Component is Loaded...");
+                }
+            );
+        });
+    </script>
+</apex:page>
