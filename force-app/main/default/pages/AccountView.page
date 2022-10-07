@@ -3,7 +3,7 @@
 
 <apex:page showHeader="false" standardStylesheets="false">
     <apex:includeLightning />
-
+ <script src="https://playful-moose-dm4m4g-dev-ed.my.site.com/LightningOut/lightning/lightning.out.js"></script>
     <div id="datatable"></div>
     <script>
         $Lightning.use("c:LightiningApp", function() {
@@ -15,8 +15,8 @@
                     console.log("Lightning LWC Component is Loaded...");
                 }
             );
-          },
-        'https://playful-moose-dm4m4g-dev-ed.my.site.com/LightningOut'  // Salesforce site endpoint
-    );
+        },
+         'https://playful-moose-dm4m4g-dev-ed.my.site.com/LightningOut/'
+        );
     </script>
 </apex:page>
