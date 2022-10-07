@@ -1,17 +1,19 @@
 <apex:page showHeader="false" standardStylesheets="false">
     <apex:includeLightning />
-
+ <script src="https://playful-moose-dm4m4g-dev-ed.my.site.com/LightningOut/lightning/lightning.out.js"></script>
     <div id="datatable"></div>
     <script>
-        $Lightning.use("c:LightiningApp", function() {
+        $Lightning.use("c:AccountInformationApp", function() {
             $Lightning.createComponent(
-                "c:lWCLightningOut",
+                "c:AccountInformation",
                 {},
                 "datatable",
                 function(cmp) {
-                    console.log("Lightning LWC Component is Loaded...");
+                    console.log("Lightning Component is Loaded...");
                 }
             );
-        });
+        },
+         'https://playful-moose-dm4m4g-dev-ed.my.site.com/LightningOut/'
+        );
     </script>
 </apex:page>
